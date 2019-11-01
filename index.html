@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>我的網頁</title>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- Main css -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- 網頁抬頭選單 -->
+        <header>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+                <div class="container">
+                    <!-- LOGO -->
+                    <a href="#" class="navbar-brand">
+                        <img src="images/Hedgehog-512.png" alt="logo" width="50" height="50"/>
+                    </a>
+                    <!-- 手機選單漢堡按鈕 -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+              <!-- 漢堡ICON -->
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+                    <!-- 選單內容 -->
+                    <div id="navbar-collapse" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li><a href="#product" class="nav-link">品種介紹</a></li>
+                            <li><a href="#video" class="nav-link">飼養環境</a></li>
+                            <li><a href="#creative" class="nav-link">糧食推薦</a></li>
+                            <li><a href="#activity" class="nav-link">醫療資訊</a></li>
+                            <li><a href="#standard" class="nav-link">注意事項</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <!-- 可以輪播的Banner圖片 -->
+        <section id="product">
+            <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+                <!-- 輪播圖片 -->
+                <div class="carousel-inner">
+                    <!-- 圖片1 -->
+                    <div class="carousel-item active">
+                        <img class="w-100" src="images/3.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h1>非洲四趾刺蝟 Atelerix albiventris</h1>
+                            <p>出現在非洲中部和東部大部分地區。</p>
+                        </div>
+                    </div>
+                    <!-- 圖片2 -->
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/b-50.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h1>印度長耳刺蝟 Hemiechinus collaris</h1>
+                            <p>印度長耳刺猬是一種原產於印度的相對較小的刺猬。</p>
+                        </div>
+                    </div>
+                    <!-- 圖片3 -->
+                    <div class="carousel-item">
+                        <img class="w-100" src="images/4.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h1>西歐刺蝟 Erinaceus europaeus</h1>
+                            <p>只在芬蘭，瑞典和俄羅斯西北才見到。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 圖片上一頁按鈕 -->
+                <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <!-- 圖片下一頁按鈕 -->
+                <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+    
+                <!-- 下方點點 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-controller" data-slide-to="1"></li>
+                    <li data-target="#carousel-controller" data-slide-to="2"></li>
+                </ol>
+            </div>
+        </section>
+    
+        <!-- 影片 -->
+        <section class="container-fluid video-area" id="video">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9HjATD1imGc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    
+        <!-- 產品介紹區塊(創意) -->
+        <section id="creative" class="creative_area">
+            <div class="container">
+                <h2 class="text-center">
+                    推薦飼料
+                </h2>
+                <!-- 產品照片 -->
+                <div class="row">
+                    <!-- 照片組1 -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="#"><img alt="產品照片1" src="images/ultimate.png" width="80" height="128" class="text-center"> 
+                                <div class="card-title-wrap">
+                                    <span class="card-title">原點instinct</span>
+                                    <span class="card-text"> 無穀雞肉口味</span>
+                                </div>
+                                <div class="pic-hover">
+                                    <h4>無穀配方 凍乾純肉噴灑技術</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 照片組2 -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="#"><img alt="產品照片2" src="images/orijen.png"width="80" height="128">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">渴望orijen</span>
+                                    <span class="card-text">野牧鮮雞</span>
+                                </div>
+                                <div class="pic-hover">
+                                    <h4>2/3新鮮肉類 1/3低溫乾燥鮮肉 85%高肉蛋白</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 照片組3 -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="#"><img alt="產品照片3" src="images/acana.png"width="80" height="128">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">艾肯拿acana</span>
+                                    <span class="card-text">雞肉蔓越梅</span>
+                                </div>
+                                <div class="pic-hover">
+                                    <h4>1/2新鮮肉累 1/2低溫乾燥鮮肉 75%高肉蛋白</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 商品文案 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="article_text">
+                        <h3>陸肉基底的貓咪主/副食罐</h3>
+                        <p> Aixia莎莎咪派(膠狀)-6號雞胸肉</br>
+                            Aixia 11歲超級老貓健康罐-(橘)糜狀純雞肉</br>
+                            Aixia 日本國產高湯金罐</br>
+                            Aixia 幼齡貓健康罐-(橘)糜狀純雞肉
+                            Aixia莎莎咪派(膠狀)-6號雞胸肉
+                        </p>
+                        <h3>魚類罐頭爭議</h3>
+                        <p>帶殼的蝦蚌貝類有過敏實例</br>
+                            刺蝟多數也不喜愛魚腥味</br>
+                            在餵食含綠貽貝(素)乾糧或罐類的飼主裡</br>
+                            有發生過敏現象
+                        </p>
+                        <h1>貓咪主食罐</h1>
+                        <p>雞湯、 EVO、Applaws 、ZEAL、Weruva、NB、ADDICTION …等主食罐都是好選擇</br>
+                            如NB和唯美味含有K3成份的，巔峰含有綠貽貝
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- 背景影片 -->
+            <div class="container">
+                <video autoplay muted loop id="myVideo">
+            <source src="video/the fact.mp4" type="video/mp4">
+          </video>
+            </div>
+        </section>
+    
+        <!-- 商品促銷活動區塊 -->
+        <section id="activity" class="activity_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/hedge1.jpg">
+                    </div>
+    
+                    <div class="col-md-4 activity_price text-center">
+
+                        <h2>飼養環境參考</h2>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <img src="images/activity_img2.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 規格 -->
+        <section id="standard" class="standard_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <table class="table table-hover">
+                            <tr>
+                                <h5 scope="col">全台非貓犬就醫資訊：</h5>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">台北：</th>
+                                    <td>亞馬森動物醫院</td>
+                                    <td>地址：台北市內湖區成功路四段311號1樓 </td>
+                                    <td>聖地牙哥動物醫院</td>
+                                    <td>地址：台北市文山區羅斯福路3段65號3F-1</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">新北：</th>
+                                    <td>剛果非犬貓動物醫院</td>
+                                    <td>地址：新北市新店區中興路三段259號1樓 </td>
+                                    <td>馬達加斯加動物醫院</td>
+                                    <td>地址：新北市板橋區文化路二段500號</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">台中：</th>
+                                    <td>侏儸紀野生動物醫院</td>
+                                    <td>地址：台中市北區英才路351號 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">高雄：</th>
+                                    <td>正紜動物醫院</td>
+                                    <td>地址：高雄市三民區建國三路207號</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">高雄：</th>
+                                    <td>肯亞動物專業醫院</td>
+                                    <td>地址:高雄市鳳山區光復路一段26號</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <table class="table">
+                            <tr>
+                                <h5 scope="col">使用說明：</h5>
+                                <div class="carousel-item active"></div>
+                                <img class="w-100" src="images/hug.jpg" alt="">
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- 貼心提醒 -->
+        <section>
+            <div class="container content">
+                <div class="row remind">
+                    <h4>貼心提醒</h4>
+                    <div class="w-100"></div>
+                    <p>洗澡時請留意：</p>
+                    <ul>
+                        <li>使用不燙手的溫水。</li>
+                        <li>水位不得淹超過刺蝟肚子。</li>
+                        <li>耳朵不能被水打濕，或有水份進入。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <!-- 頁腳 -->
+        <footer class="footer">
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 footer_logo">
+                        <img src="images/Hedgehog-512.png">
+                    </div>
+                    <div class="col-md-4 col-sm-12 footer_address">
+                        <ul>
+                            <li>飼養相關連結：</li>
+                            <li>Facebook搜尋：刺蝟❤HEDGEHOG❤</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer_copyright justify-content-center">
+                    <p>COPYRIGHT © 2019 halla malmo .ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+    
+        </footer>
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+        <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+    
+        <script src="js/back_top.js"></script>
+    </body>
+    
+    </html>
